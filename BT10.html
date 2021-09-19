@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Nhập vào số điện"))
+            if (a < 0) {
+                alert("Vui lòng nhập số điện lớn hơn 0")
+            }
+            else if (a <= 50) {
+                alert(`Bạn đã dùng được ${a} kWh số tiền phải trả là 1.678 VND`)
+            }
+            else if (a <= 100) {
+                alert(`Bạn đã dùng được ${a} kWh số tiền phải trả là 1.734 VND`)
+            }
+            else if (a <= 200) {
+                alert(`Bạn đã dùng được ${a} kWh số tiền phải trả là 2.014 VND`)
+            }
+            else if (a <= 300) {
+                alert(`Bạn đã dùng được ${a} kWh số tiền phải trả là 2.538 VND`)
+            }
+            else if (a <= 400) {
+                alert(`Bạn đã dùng được ${a} kWh số tiền phải trả là 2.834 VND`)
+            }
+            else if (a > 400) {
+                alert(`Bạn đã dùng được ${a} kWh số tiền phải trả là 2.927 VND`)
+            }
+            else {
+                alert("Lỗi")
+            }
+    </script>
+</body>
+</html>

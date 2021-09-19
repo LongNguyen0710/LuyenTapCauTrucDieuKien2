@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let P = parseFloat(prompt(`Nhập vào số tiền muốn gửi (VND)`))
+        i = parseFloat(prompt(`Nhập vào lãi suất trong kì %`))
+        i = i / 100;
+        n = parseFloat(prompt("Nhập vào số tháng muốn gửi"))
+        A = P * (1 + i) ** n;
+        alert(`Số tiền nhận được là ${A} VND`)
+        Z = A - P;
+        alert(`Số tiền lãi được là ${Z} VND`)
+    </script>
+</body>
+
+</html>

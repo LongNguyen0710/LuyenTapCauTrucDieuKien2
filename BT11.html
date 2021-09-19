@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let luong = Number(prompt("Nhập số lương"));
+        if (luong < 0){
+            alert ("Vui lòng nhập số lương lớn hơn 0 VND")
+        }
+        else if (luong <= 4000000) {
+            alert("Bạn không phải nộp thuế thu nhập cá nhân");
+        }
+        else if (luong <= 6000000) {
+            thue = (luong - 4000000) * 5 / 100;
+            alert(`Bạn phải nộp thuế thu nhập cá nhân : ${thue} VND`);
+        }
+        else if (luong <= 9000000) {
+            thue = (6000000 - 4000000) * 5 / 100 + (luong - 6000000) * 10 / 100;
+            alert(`Bạn phải nộp thuế thu nhập cá nhân : ${thue} VND`);
+        }
+        else if (luong <= 14000000) {
+            thue = (6000000 - 4000000) * 5 / 100 + (9000000 - 6000000) * 10 / 100 + (luong - 9000000) * 15 / 100;
+            alert(`Bạn phải nộp thuế thu nhập cá nhân : ${thue} VND`);
+        }
+        else if (luong <= 24000000) {
+            thue = (6000000 - 4000000) * 5 / 100 + (9000000 - 6000000) * 10 / 100 + (14000000 - 9000000) * 15 / 100 + (luong - 14000000) * 20 / 100;
+            alert(`Bạn phải nộp thuế thu nhập cá nhân : ${thue} VND`);
+        }
+        else if (luong <= 44000000) {
+            thue = (6000000 - 4000000) * 5 / 100 + (9000000 - 6000000) * 10 / 100 + (14000000 - 9000000) * 15 / 100 + (24000000 - 14000000) * 20 / 100 + (luong - 24000000) * 25 / 100;
+            alert(`Bạn phải nộp thuế thu nhập cá nhân : ${thue} VND`);
+        }
+        else if (luong <= 84000000) {
+            thue = (6000000 - 4000000) * 5 / 100 + (9000000 - 6000000) * 10 / 100 + (14000000 - 9000000) * 15 / 100 + (24000000 - 14000000) * 20 / 100 + (44000000 - 24000000) * 25 / 100 + (luong - 44000000) * 30 / 100;
+            alert(`Bạn phải nộp thuế thu nhập cá nhân : ${thue} VND`);
+        }
+        else if (luong > 84000000) {
+            thue = (6000000 - 4000000) * 5 / 100 + (9000000 - 6000000) * 10 / 100 + (14000000 - 9000000) * 15 / 100 + (24000000 - 14000000) * 20 / 100 + (44000000 - 24000000) * 25 / 100 + (84000000 - 44000000) * 30 / 100 + (luong - 84000000) * 35 / 100;
+            alert(`Bạn phải nộp thuế thu nhập cá nhân : ${thue} VND`);
+        }
+        else {
+            alert("Vui lòng nhập lại")
+        }
+    </script>
+</body>
+
+</html>
